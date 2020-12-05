@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script>
+            function veszek_fifa(){
+              var penz=document.getElementById("kosar").value*1;
+              var osszeg=20790;
+              penz=penz+osszeg;
+              document.getElementById("kosar").value=penz;
+            }
+            function veszek_nhl(){
+              var penz=document.getElementById("kosar").value*1;
+              var osszeg=22340;
+              penz=penz+osszeg;
+              document.getElementById("kosar").value=penz;
+            }
+            function veszek_madden(){
+              var penz=document.getElementById("kosar").value*1;
+              var osszeg=19270;
+              penz=penz+osszeg;
+              document.getElementById("kosar").value=penz;
+            }
+        </script>
+    </head>
+<body>
+<div class="jumbotron text-center">
+      <h2>No.1 Gameshop</h2>
+      <h3>Kosár tartalma:</h3>
+      <input type="number" value="0" id="kosar" >
+</div>
+<div>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Fifa 21</h3>
+      <img src="fifa.jpg" id="kepek">
+      <p id="arak">Ára: 20790 Ft</p>
+        <button onClick="veszek_fifa()" >Kosárba</button>    
+    </div>
+    <div class="col-sm-4">
+      <h3>NHL 2021</h3>
+      <img src="nhl.jpg" id="kepek">
+      <p id="arak">Ára: 22340 Ft</p>
+        <button onclick="veszek_nhl()" >Kosárba</button>
+    </div>
+    <div class="col-sm-4">
+      <h3>Madden 2021</h3>        
+      <img src="madden.jpg" id="kepek">
+      <p id="arak">Ára: 19270 Ft</p>
+        <button onclick="veszek_madden()" >Kosárba</button>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
