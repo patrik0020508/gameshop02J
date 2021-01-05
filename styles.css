@@ -1,4 +1,13 @@
 #kepek{
-    height: 400px;
-    width: 350px;
+    height: 80%;
+    width: 100%;
+}
+body{
+    background-image: url('hatter.jpg');
+}
+button{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: green;
 }

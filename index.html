@@ -5,23 +5,21 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script>
+            let penz=0;
             function veszek_fifa(){
-              var penz=document.getElementById("kosar").value*1;
               var osszeg=20790;
               penz=penz+osszeg;
-              document.getElementById("kosar").value=penz;
+              document.getElementById("kosar").innerHTML=penz;
             }
             function veszek_nhl(){
-              var penz=document.getElementById("kosar").value*1;
               var osszeg=22340;
               penz=penz+osszeg;
-              document.getElementById("kosar").value=penz;
+              document.getElementById("kosar").innerHTML=penz;
             }
             function veszek_madden(){
-              var penz=document.getElementById("kosar").value*1;
               var osszeg=19270;
               penz=penz+osszeg;
-              document.getElementById("kosar").value=penz;
+              document.getElementById("kosar").innerHTML=penz;
             }
         </script>
     </head>
@@ -29,7 +27,7 @@
 <div class="jumbotron text-center">
       <h2>No.1 Gameshop</h2>
       <h3>Kosár tartalma:</h3>
-      <input type="number" value="0" id="kosar" >
+      <div><b id="kosar"> Ft</b></div>
 </div>
 <div>
     <div class="container">
